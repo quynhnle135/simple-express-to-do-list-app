@@ -35,7 +35,6 @@ app.post("/tasks", (req, res) => {
     let newTask = {
       id: tasks.length + 1,
       title: req.body.title,
-      desc: req.body.desc || "No Description",
       completed: req.body.complated || false,
     };
     tasks.push(newTask);
@@ -52,9 +51,7 @@ app.put("/tasks/:id", (req, res) => {
     if (!task) {
       return res.status(404).json({ message: "Task not found." });
     }
-    task.title = req.body.title || task.title;
-    task.desc = req.body.desc || task.desc;
-    task.completed = req.body.completed || task.completed;
+    task.completed = req.body.completed;
     res.json(task);
   } catch (err) {
     res.status(500).json({ message: "Failed to update task." });
