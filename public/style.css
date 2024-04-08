@@ -1,0 +1,53 @@
+body {
+  font-family: "Space Mono", monospace;
+  margin: auto;
+  min-height: 100vh;
+  background-color: #eeeeee;
+}
+h1 {
+  color: #627254;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container {
+  width: 350px;
+  padding: 0px 30px;
+}
+
+form {
+  padding: 20px 0px;
+}
+
+.todo {
+  display: flex;
+  margin: 10px 0px;
+  color: #003c43;
+}
+
+.todo span {
+  width: 80%;
+}
+
+.todo div {
+  display: flex;
+  width: 20%;
+}
+
+.todo div button {
+  margin: 0px 5px;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+button {
+  background-color: #76885b;
+  color: #fff;
+}
