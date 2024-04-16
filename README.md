@@ -1,4 +1,4 @@
-# Simple To Do List App with Express
+# Simple To Do List App with Express.js
 
 This project is a simple To Do List application built with Express.js for the backend and plain JavaScript, HTML, and CSS for the frontend. It allows users to create, view, update, and delete tasks. The application serves as a basic example of how to integrate a frontend with a backend using an API.
 
